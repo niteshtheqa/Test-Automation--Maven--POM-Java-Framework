@@ -1,0 +1,6 @@
+com\qa\tests\CompanyAndProfileDetailsPageTest.class
+com\qa\tests\ConfirmRegistrationTest.class
+com\qa\tests\ContactsPageTest.class
+com\qa\tests\LoginPageTest.class
+com\qa\tests\HomePageTest.class
+com\qa\tests\SignUpPageTest.class

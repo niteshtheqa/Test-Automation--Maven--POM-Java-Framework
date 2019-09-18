@@ -1,8 +1,10 @@
 H:\MyWorkspace\CRMTest\src\main\java\com\qa\pages\CompanyAndProfileDetailsPage.java
+H:\MyWorkspace\CRMTest\src\main\java\com\qa\util\TestUtil.java
+H:\MyWorkspace\CRMTest\src\main\java\ExtentReporter\ExtentReportNG.java
 H:\MyWorkspace\CRMTest\src\main\java\com\qa\pages\ConfirmRegistration.java
 H:\MyWorkspace\CRMTest\src\main\java\com\qa\pages\HomePage.java
 H:\MyWorkspace\CRMTest\src\main\java\com\qa\pages\SignUpPage.java
+H:\MyWorkspace\CRMTest\src\main\java\com\qa\pages\ContactsPage.java
 H:\MyWorkspace\CRMTest\src\main\java\com\qa\pages\LoginPage.java
 H:\MyWorkspace\CRMTest\src\main\java\com\qa\base\TestBase.java
-H:\MyWorkspace\CRMTest\src\main\java\com\qa\pages\ContactPage.java
-H:\MyWorkspace\CRMTest\src\main\java\com\qa\util\Util.java
+H:\MyWorkspace\CRMTest\src\main\java\com\qa\util\WebEventListener.java

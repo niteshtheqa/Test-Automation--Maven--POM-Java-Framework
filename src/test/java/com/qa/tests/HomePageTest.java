@@ -8,14 +8,14 @@ import org.testng.asserts.SoftAssert;
 import com.qa.base.TestBase;
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
-import com.qa.util.Util;
+import com.qa.util.TestUtil;
 
 public class HomePageTest extends TestBase {
 
 	LoginPage loginPage;
 	HomePage homePage;
-	Util util;
 	SoftAssert assert1 = new SoftAssert();
+	TestUtil testUtil;
 
 	public HomePageTest() {
 		super();
@@ -25,8 +25,8 @@ public class HomePageTest extends TestBase {
 	public void setUP() {
 		initialization();
 		homePage = new HomePage();
+		testUtil = new TestUtil();
 		loginPage = new LoginPage();
-		util = new Util();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
@@ -37,7 +37,7 @@ public class HomePageTest extends TestBase {
 
 	@Test(enabled = true)
 	public void verifyUserTest() {
-		util.switchToFrame("mainpanel");
+		testUtil.switchToFrame("mainpanel");
 		assert1.assertTrue(homePage.verifyUser());
 	}
 

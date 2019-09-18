@@ -11,7 +11,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 import com.qa.base.TestBase;
 
-public class Util extends TestBase {
+public class TestUtil extends TestBase {
 	public static long PAGE_LOAD_TIME = 30;
 	public static long IMPLICIT_WAIT_TIME = 20;
 	public static String TESTDATA_FILE_PATH = "H:\\MyWorkspace\\CRMTest\\src\\main\\java\\com\\qa\\testdata";
@@ -31,7 +31,7 @@ public class Util extends TestBase {
 
 	}
 
-	public Object[][] getTestData(String fileName, String sheetName) {
+	public static Object[][] getTestData(String fileName, String sheetName) {
 		FileInputStream fileInputStream = null;
 
 		try {

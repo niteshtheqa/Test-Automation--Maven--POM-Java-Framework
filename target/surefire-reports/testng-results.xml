@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="0" total="8" passed="6">
+<testng-results skipped="1" failed="1" ignored="1" total="15" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="290132" started-at="2019-08-01T17:09:56Z" finished-at="2019-08-01T17:14:46Z">
+  <suite name="Command line suite" duration-ms="878869" started-at="2019-08-12T13:45:15Z" finished-at="2019-08-12T13:59:54Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="290132" started-at="2019-08-01T17:09:56Z" finished-at="2019-08-01T17:14:46Z">
+    <test name="Command line test" duration-ms="878869" started-at="2019-08-12T13:45:15Z" finished-at="2019-08-12T13:59:54Z">
       <class name="com.qa.tests.ConfirmRegistrationTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.qa.tests.ConfirmRegistrationTest@b97c004]" name="setUp" is-config="true" duration-ms="62516" started-at="2019-08-01T17:11:00Z" finished-at="2019-08-01T17:12:03Z">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.qa.tests.ConfirmRegistrationTest@215be6bb]" name="setUp" is-config="true" duration-ms="73301" started-at="2019-08-12T13:46:31Z" finished-at="2019-08-12T13:47:45Z">
           <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
               <![CDATA[Unexpected modal dialog (text: Errors were encountered: 
@@ -21,7 +21,7 @@ Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b015
 System info: host: 'DESKTOP-MUE1MC5', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a68226d3-9e5a-4a6f-abc4-8051288c1b7f
+Session ID: c71d547e-531b-4fb5-a143-9ac216fd09eb
 *** Element info: {Using=xpath, value=//input[@name='company_name']}]]>
             </message>
             <full-stacktrace>
@@ -36,12 +36,12 @@ Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b015
 System info: host: 'DESKTOP-MUE1MC5', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a68226d3-9e5a-4a6f-abc4-8051288c1b7f
+Session ID: c71d547e-531b-4fb5-a143-9ac216fd09eb
 *** Element info: {Using=xpath, value=//input[@name='company_name']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
@@ -50,15 +50,21 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
+at com.sun.proxy.$Proxy6.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
 at com.qa.pages.CompanyAndProfileDetailsPage.verifyProfileDataSubmit(CompanyAndProfileDetailsPage.java:48)
 at com.qa.tests.ConfirmRegistrationTest.setUp(ConfirmRegistrationTest.java:33)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
 at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
@@ -85,9 +91,9 @@ at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNG
 at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
 at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
 at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
 at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
@@ -99,11 +105,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.tests.ConfirmRegistrationTest@b97c004]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-01T17:12:03Z" finished-at="2019-08-01T17:12:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="verifyRegistrationCompletedTest()[pri:0, instance:com.qa.tests.ConfirmRegistrationTest@b97c004]" name="verifyRegistrationCompletedTest" duration-ms="0" started-at="2019-08-01T17:12:03Z" finished-at="2019-08-01T17:12:03Z">
+        <test-method status="SKIP" signature="verifyRegistrationCompletedTest()[pri:0, instance:com.qa.tests.ConfirmRegistrationTest@215be6bb]" name="verifyRegistrationCompletedTest" duration-ms="0" started-at="2019-08-12T13:47:45Z" finished-at="2019-08-12T13:47:45Z">
           <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
               <![CDATA[Unexpected modal dialog (text: Errors were encountered: 
@@ -117,7 +119,7 @@ Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b015
 System info: host: 'DESKTOP-MUE1MC5', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a68226d3-9e5a-4a6f-abc4-8051288c1b7f
+Session ID: c71d547e-531b-4fb5-a143-9ac216fd09eb
 *** Element info: {Using=xpath, value=//input[@name='company_name']}]]>
             </message>
             <full-stacktrace>
@@ -132,12 +134,12 @@ Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b015
 System info: host: 'DESKTOP-MUE1MC5', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a68226d3-9e5a-4a6f-abc4-8051288c1b7f
+Session ID: c71d547e-531b-4fb5-a143-9ac216fd09eb
 *** Element info: {Using=xpath, value=//input[@name='company_name']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
@@ -146,15 +148,21 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
+at com.sun.proxy.$Proxy6.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
 at com.qa.pages.CompanyAndProfileDetailsPage.verifyProfileDataSubmit(CompanyAndProfileDetailsPage.java:48)
 at com.qa.tests.ConfirmRegistrationTest.setUp(ConfirmRegistrationTest.java:33)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
 at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
@@ -181,9 +189,9 @@ at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNG
 at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
 at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
 at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
 at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
@@ -195,13 +203,181 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistrationCompletedTest -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.tests.ConfirmRegistrationTest@215be6bb]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-12T13:47:45Z" finished-at="2019-08-12T13:47:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.ConfirmRegistrationTest -->
-      <class name="com.qa.tests.CompanyAndProfileDetailsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.CompanyAndProfileDetailsPageTest@5cc7c2a6]" name="setUp" is-config="true" duration-ms="63602" started-at="2019-08-01T17:09:56Z" finished-at="2019-08-01T17:11:00Z">
+      <class name="com.qa.tests.HomePageTest">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:com.qa.tests.HomePageTest@5dfcfece]" name="setUP" is-config="true" duration-ms="74943" started-at="2019-08-12T13:53:43Z" finished-at="2019-08-12T13:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:0, instance:com.qa.tests.HomePageTest@5dfcfece]" name="verifyHomePageTitleTest" duration-ms="26" started-at="2019-08-12T13:54:58Z" finished-at="2019-08-12T13:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.HomePageTest@5dfcfece]" name="tearDown" is-config="true" duration-ms="16" started-at="2019-08-12T13:54:58Z" finished-at="2019-08-12T13:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:com.qa.tests.HomePageTest@5dfcfece]" name="setUP" is-config="true" duration-ms="69044" started-at="2019-08-12T13:54:58Z" finished-at="2019-08-12T13:56:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="verifyUserTest()[pri:0, instance:com.qa.tests.HomePageTest@5dfcfece]" name="verifyUserTest" duration-ms="20430" started-at="2019-08-12T13:56:07Z" finished-at="2019-08-12T13:56:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.HomePageTest@5dfcfece]" name="tearDown" is-config="true" duration-ms="12" started-at="2019-08-12T13:56:28Z" finished-at="2019-08-12T13:56:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.HomePageTest -->
+      <class name="com.qa.tests.ContactsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.ContactsPageTest@4439f31e]" name="setUp" is-config="true" duration-ms="66554" started-at="2019-08-12T13:47:46Z" finished-at="2019-08-12T13:48:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyCompanyAndProfileDetailsEnteredTest()[pri:0, instance:com.qa.tests.CompanyAndProfileDetailsPageTest@5cc7c2a6]" name="verifyCompanyAndProfileDetailsEnteredTest" duration-ms="138" started-at="2019-08-01T17:11:00Z" finished-at="2019-08-01T17:11:00Z">
+        <test-method status="PASS" signature="verfiyCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.ContactsPageTest@4439f31e]" name="verfiyCreateNewContact" duration-ms="11133" started-at="2019-08-12T13:48:52Z" data-provider="getCRMTestData" finished-at="2019-08-12T13:49:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Cena]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[WWE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyCreateNewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.ContactsPageTest@4439f31e]" name="tearDown" is-config="true" duration-ms="2684" started-at="2019-08-12T13:49:03Z" finished-at="2019-08-12T13:49:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.ContactsPageTest@4439f31e]" name="setUp" is-config="true" duration-ms="81082" started-at="2019-08-12T13:49:06Z" finished-at="2019-08-12T13:50:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verfiyCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.ContactsPageTest@4439f31e]" name="verfiyCreateNewContact" duration-ms="8202" started-at="2019-08-12T13:50:27Z" data-provider="getCRMTestData" finished-at="2019-08-12T13:50:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mayuri]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Malusare]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Wockhardt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyCreateNewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.ContactsPageTest@4439f31e]" name="tearDown" is-config="true" duration-ms="2282" started-at="2019-08-12T13:50:35Z" finished-at="2019-08-12T13:50:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.ContactsPageTest@4439f31e]" name="setUp" is-config="true" duration-ms="69646" started-at="2019-08-12T13:50:38Z" finished-at="2019-08-12T13:51:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verfiyCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.ContactsPageTest@4439f31e]" name="verfiyCreateNewContact" duration-ms="27179" started-at="2019-08-12T13:51:47Z" data-provider="getCRMTestData" finished-at="2019-08-12T13:52:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rahul]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mishra]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Yahoo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyCreateNewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.ContactsPageTest@4439f31e]" name="tearDown" is-config="true" duration-ms="1602" started-at="2019-08-12T13:52:15Z" finished-at="2019-08-12T13:52:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.ContactsPageTest@4439f31e]" name="setUp" is-config="true" duration-ms="76196" started-at="2019-08-12T13:52:16Z" finished-at="2019-08-12T13:53:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verfiyCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.ContactsPageTest@4439f31e]" name="verfiyCreateNewContact" duration-ms="8789" started-at="2019-08-12T13:53:32Z" data-provider="getCRMTestData" finished-at="2019-08-12T13:53:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Deepak]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Choursia]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[T&T]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyCreateNewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.ContactsPageTest@4439f31e]" name="tearDown" is-config="true" duration-ms="2281" started-at="2019-08-12T13:53:41Z" finished-at="2019-08-12T13:53:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.ContactsPageTest -->
+      <class name="com.qa.tests.CompanyAndProfileDetailsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.CompanyAndProfileDetailsPageTest@32d992b2]" name="setUp" is-config="true" duration-ms="74694" started-at="2019-08-12T13:45:15Z" finished-at="2019-08-12T13:46:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyCompanyAndProfileDetailsEnteredTest()[pri:0, instance:com.qa.tests.CompanyAndProfileDetailsPageTest@32d992b2]" name="verifyCompanyAndProfileDetailsEnteredTest" duration-ms="1575" started-at="2019-08-12T13:46:30Z" finished-at="2019-08-12T13:46:31Z">
           <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
               <![CDATA[Unexpected modal dialog (text: Errors were encountered: 
@@ -215,7 +391,7 @@ Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b015
 System info: host: 'DESKTOP-MUE1MC5', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5e3bc184-7a33-4897-be3c-42f3725c7fda
+Session ID: a7a216fa-3083-40d7-948b-dc49099140e7
 *** Element info: {Using=xpath, value=//input[@name='company_name']}]]>
             </message>
             <full-stacktrace>
@@ -230,12 +406,12 @@ Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b015
 System info: host: 'DESKTOP-MUE1MC5', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5e3bc184-7a33-4897-be3c-42f3725c7fda
+Session ID: a7a216fa-3083-40d7-948b-dc49099140e7
 *** Element info: {Using=xpath, value=//input[@name='company_name']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
@@ -244,15 +420,21 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
+at com.sun.proxy.$Proxy6.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
 at com.qa.pages.CompanyAndProfileDetailsPage.verifyProfileDataSubmit(CompanyAndProfileDetailsPage.java:48)
 at com.qa.tests.CompanyAndProfileDetailsPageTest.verifyCompanyAndProfileDetailsEnteredTest(CompanyAndProfileDetailsPageTest.java:34)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -276,9 +458,9 @@ at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNG
 at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
 at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
 at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
 at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
@@ -290,83 +472,83 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCompanyAndProfileDetailsEnteredTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.CompanyAndProfileDetailsPageTest@5cc7c2a6]" name="tearDown" is-config="true" duration-ms="256" started-at="2019-08-01T17:11:00Z" finished-at="2019-08-01T17:11:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.CompanyAndProfileDetailsPageTest@32d992b2]" name="tearDown" is-config="true" duration-ms="60" started-at="2019-08-12T13:46:31Z" finished-at="2019-08-12T13:46:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.CompanyAndProfileDetailsPageTest -->
       <class name="com.qa.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.LoginPageTest@4590c9c3]" name="setUp" is-config="true" duration-ms="16701" started-at="2019-08-01T17:12:03Z" finished-at="2019-08-01T17:12:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.LoginPageTest@23ceabc1]" name="setUp" is-config="true" duration-ms="20004" started-at="2019-08-12T13:56:28Z" finished-at="2019-08-12T13:56:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pageTitleTest()[pri:1, instance:com.qa.tests.LoginPageTest@4590c9c3]" name="pageTitleTest" duration-ms="26" started-at="2019-08-01T17:12:19Z" finished-at="2019-08-01T17:12:19Z">
+        <test-method status="PASS" signature="pageTitleTest()[pri:1, instance:com.qa.tests.LoginPageTest@23ceabc1]" name="pageTitleTest" duration-ms="39" started-at="2019-08-12T13:56:48Z" finished-at="2019-08-12T13:56:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.LoginPageTest@4590c9c3]" name="tearDown" is-config="true" duration-ms="20" started-at="2019-08-01T17:12:19Z" finished-at="2019-08-01T17:12:19Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.LoginPageTest@23ceabc1]" name="tearDown" is-config="true" duration-ms="32" started-at="2019-08-12T13:56:48Z" finished-at="2019-08-12T13:56:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.LoginPageTest@4590c9c3]" name="setUp" is-config="true" duration-ms="13830" started-at="2019-08-01T17:12:32Z" finished-at="2019-08-01T17:12:45Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.LoginPageTest@23ceabc1]" name="setUp" is-config="true" duration-ms="16666" started-at="2019-08-12T13:57:03Z" finished-at="2019-08-12T13:57:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="crmLogoImageTest()[pri:2, instance:com.qa.tests.LoginPageTest@4590c9c3]" name="crmLogoImageTest" duration-ms="112" started-at="2019-08-01T17:12:45Z" finished-at="2019-08-01T17:12:46Z">
+        <test-method status="PASS" signature="crmLogoImageTest()[pri:2, instance:com.qa.tests.LoginPageTest@23ceabc1]" name="crmLogoImageTest" duration-ms="245" started-at="2019-08-12T13:57:20Z" finished-at="2019-08-12T13:57:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crmLogoImageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.LoginPageTest@4590c9c3]" name="tearDown" is-config="true" duration-ms="20" started-at="2019-08-01T17:12:46Z" finished-at="2019-08-01T17:12:46Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.LoginPageTest@23ceabc1]" name="tearDown" is-config="true" duration-ms="15" started-at="2019-08-12T13:57:20Z" finished-at="2019-08-12T13:57:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.LoginPageTest@4590c9c3]" name="setUp" is-config="true" duration-ms="15855" started-at="2019-08-01T17:13:00Z" finished-at="2019-08-01T17:13:16Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.LoginPageTest@23ceabc1]" name="setUp" is-config="true" duration-ms="14082" started-at="2019-08-12T13:57:36Z" finished-at="2019-08-12T13:57:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qa.tests.LoginPageTest@4590c9c3]" name="loginTest" duration-ms="30179" started-at="2019-08-01T17:13:16Z" finished-at="2019-08-01T17:13:46Z">
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qa.tests.LoginPageTest@23ceabc1]" name="loginTest" duration-ms="57166" started-at="2019-08-12T13:57:50Z" finished-at="2019-08-12T13:58:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.LoginPageTest@4590c9c3]" name="tearDown" is-config="true" duration-ms="22" started-at="2019-08-01T17:13:46Z" finished-at="2019-08-01T17:13:46Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.LoginPageTest@23ceabc1]" name="tearDown" is-config="true" duration-ms="19" started-at="2019-08-12T13:58:47Z" finished-at="2019-08-12T13:58:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.LoginPageTest -->
       <class name="com.qa.tests.SignUpPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.SignUpPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="11980" started-at="2019-08-01T17:12:19Z" finished-at="2019-08-01T17:12:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.SignUpPageTest@5d5eef3d]" name="setUp" is-config="true" duration-ms="15251" started-at="2019-08-12T13:56:48Z" finished-at="2019-08-12T13:57:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySignUpPageTitle()[pri:1, instance:com.qa.tests.SignUpPageTest@32e6e9c3]" name="verifySignUpPageTitle" duration-ms="66" started-at="2019-08-01T17:12:31Z" finished-at="2019-08-01T17:12:32Z">
+        <test-method status="PASS" signature="verifySignUpPageTitle()[pri:1, instance:com.qa.tests.SignUpPageTest@5d5eef3d]" name="verifySignUpPageTitle" duration-ms="21" started-at="2019-08-12T13:57:03Z" finished-at="2019-08-12T13:57:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignUpPageTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.SignUpPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="18" started-at="2019-08-01T17:12:32Z" finished-at="2019-08-01T17:12:32Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.SignUpPageTest@5d5eef3d]" name="tearDown" is-config="true" duration-ms="17" started-at="2019-08-12T13:57:03Z" finished-at="2019-08-12T13:57:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.SignUpPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="13825" started-at="2019-08-01T17:12:46Z" finished-at="2019-08-01T17:12:59Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.SignUpPageTest@5d5eef3d]" name="setUp" is-config="true" duration-ms="15352" started-at="2019-08-12T13:57:20Z" finished-at="2019-08-12T13:57:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySignUpButtonClickableTest()[pri:2, instance:com.qa.tests.SignUpPageTest@32e6e9c3]" name="verifySignUpButtonClickableTest" duration-ms="359" started-at="2019-08-01T17:12:59Z" finished-at="2019-08-01T17:13:00Z">
+        <test-method status="PASS" signature="verifySignUpButtonClickableTest()[pri:2, instance:com.qa.tests.SignUpPageTest@5d5eef3d]" name="verifySignUpButtonClickableTest" duration-ms="114" started-at="2019-08-12T13:57:36Z" finished-at="2019-08-12T13:57:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignUpButtonClickableTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.SignUpPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="19" started-at="2019-08-01T17:13:00Z" finished-at="2019-08-01T17:13:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.SignUpPageTest@5d5eef3d]" name="tearDown" is-config="true" duration-ms="16" started-at="2019-08-12T13:57:36Z" finished-at="2019-08-12T13:57:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.SignUpPageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="12821" started-at="2019-08-01T17:13:46Z" finished-at="2019-08-01T17:13:59Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.SignUpPageTest@5d5eef3d]" name="setUp" is-config="true" duration-ms="16141" started-at="2019-08-12T13:58:47Z" finished-at="2019-08-12T13:59:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySignUpFeatureTest()[pri:3, instance:com.qa.tests.SignUpPageTest@32e6e9c3]" name="verifySignUpFeatureTest" duration-ms="47613" started-at="2019-08-01T17:13:59Z" finished-at="2019-08-01T17:14:46Z">
+        <test-method status="PASS" signature="verifySignUpFeatureTest()[pri:3, instance:com.qa.tests.SignUpPageTest@5d5eef3d]" name="verifySignUpFeatureTest" duration-ms="50068" started-at="2019-08-12T13:59:03Z" finished-at="2019-08-12T13:59:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignUpFeatureTest -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.qa.tests.SignUpPageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="76" started-at="2019-08-01T17:14:46Z" finished-at="2019-08-01T17:14:46Z">
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.qa.tests.SignUpPageTest@5d5eef3d]" name="tearDown" is-config="true" duration-ms="514" started-at="2019-08-12T13:59:53Z" finished-at="2019-08-12T13:59:54Z">
           <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
               <![CDATA[Unexpected modal dialog (text: Errors were encountered: 
@@ -380,7 +562,7 @@ Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b015
 System info: host: 'DESKTOP-MUE1MC5', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 8ee94c59-aaf0-450b-9d4d-1057a2228cbb]]>
+Session ID: 62518d86-60fb-4a8b-9252-aef89e72d5f0]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Errors were encountered: 
@@ -394,22 +576,29 @@ Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b015
 System info: host: 'DESKTOP-MUE1MC5', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 8ee94c59-aaf0-450b-9d4d-1057a2228cbb
+Session ID: 62518d86-60fb-4a8b-9252-aef89e72d5f0
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
 at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
+at com.sun.proxy.$Proxy6.close(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.close(EventFiringWebDriver.java:198)
 at com.qa.tests.SignUpPageTest.tearDown(SignUpPageTest.java:53)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
 at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
@@ -436,9 +625,9 @@ at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNG
 at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
 at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
 at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
 at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)

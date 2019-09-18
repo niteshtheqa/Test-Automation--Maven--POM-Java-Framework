@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="ExtentReporter.ExtentReportNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.qa.tests.HomePageTest">
+      <class name="com.qa.tests.CompanyAndProfileDetailsPageTest">
         <methods>
-          <include name="verifyUserTest"/>
-          <include name="setUP"/>
+          <include name="tearDown"/>
+          <include name="verifyCompanyAndProfileDetailsEnteredTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.tests.CompanyAndProfileDetailsPageTest -->
+      <class name="com.qa.tests.ConfirmRegistrationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyRegistrationCompletedTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.tests.HomePageTest -->
+      </class> <!-- com.qa.tests.ConfirmRegistrationTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,10 @@
+com\qa\pages\ContactsPage.class
+com\qa\pages\LoginPage.class
+com\qa\pages\ConfirmRegistration.class
+ExtentReporter\ExtentReportNG.class
+com\qa\util\TestUtil.class
+com\qa\pages\HomePage.class
+com\qa\pages\SignUpPage.class
+com\qa\pages\CompanyAndProfileDetailsPage.class
+com\qa\base\TestBase.class
+com\qa\util\WebEventListener.class

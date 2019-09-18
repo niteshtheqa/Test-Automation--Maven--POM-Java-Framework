@@ -15,6 +15,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -28,7 +30,8 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.14.3</version>
-			<scope>test</scope>
+			<scope>compile</scope>
+
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -71,7 +74,31 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+		<dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.2</version>
+		</dependency>
+
 
 
 	</dependencies>
+	<build>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<verbose>true</verbose>
+					<fork>true</fork>
+					<executable>C:\Program Files\Java\jdk1.8.0_101\bin\javac</executable>
+					<compilerVersion>1.8</compilerVersion>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
 </project>
