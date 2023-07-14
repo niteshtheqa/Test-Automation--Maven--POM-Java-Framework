@@ -1,6 +1,38 @@
-<<<<<<< HEAD
-/target/
-=======
+# Compiled class files
+*.class
 
-CRMTest/
->>>>>>> 7c4cdf036a6eb33e8c94ef1507da21456110c1e1
+# Log files
+*.log
+
+# IntelliJ IDEA files
+.idea/
+
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# Maven target directory
+target/
+
+# Gradle build directory
+build/
+
+# Compiled Java bytecode
+bin/
+
+# Generated files
+gen/
+
+# IDE-specific files and directories
+.vscode/
+*.iml
+
+# macOS files
+.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# Maven Wrapper files
+.mvn/wrapper/
