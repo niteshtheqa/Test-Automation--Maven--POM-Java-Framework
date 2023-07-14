@@ -1,5 +1,6 @@
 package com.qa.util;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -14,7 +15,10 @@ import com.qa.base.TestBase;
 public class TestUtil extends TestBase {
 	public static long PAGE_LOAD_TIME = 30;
 	public static long IMPLICIT_WAIT_TIME = 20;
-	public static String TESTDATA_FILE_PATH = "H:\\MyWorkspace\\CRMTest\\src\\main\\java\\com\\qa\\testdata";
+
+	public static String TESTDATA_FILE_PATH = System.getProperty("user.dir") + File.separator + "src" + File.separator
+			+ "main"
+			+ File.separator + "java" + File.separator + "com" + File.separator + "qa" + File.separator + "testdata";
 
 	public static Workbook workbook;
 	public static Sheet sheet;
@@ -35,7 +39,7 @@ public class TestUtil extends TestBase {
 		FileInputStream fileInputStream = null;
 
 		try {
-			fileInputStream = new FileInputStream(TESTDATA_FILE_PATH + "\\" + fileName);
+			fileInputStream = new FileInputStream(TESTDATA_FILE_PATH + File.separator + fileName);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

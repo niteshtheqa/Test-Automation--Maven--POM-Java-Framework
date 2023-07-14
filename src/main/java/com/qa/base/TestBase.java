@@ -14,11 +14,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.util.TestUtil;
 import com.qa.util.WebEventListener;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
@@ -32,8 +35,11 @@ public class TestBase {
 		try {
 
 			prop = new Properties();
-			FileInputStream fileInputStream = new FileInputStream(
-					"H:\\MyWorkspace\\CRMTest\\src\\main\\java\\com\\qa\\config\\configuration.properties");
+
+			String filePath = System.getProperty("user.dir") + File.separator + "src" + File.separator + "main"
+					+ File.separator + "java" + File.separator + "com" + File.separator + "qa" + File.separator
+					+ "config" + File.separator + "configuration.properties";
+			FileInputStream fileInputStream = new FileInputStream(filePath);
 			prop.load(fileInputStream);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -47,13 +53,18 @@ public class TestBase {
 
 		String browser = prop.getProperty("browser");
 		if (browser.equalsIgnoreCase("ff")) {
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} else if (browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "");
+			// System.setProperty("webdriver.chrome.driver", "");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("ie")) {
 			System.setProperty("webdriver.ie.driver", "");
 			driver = new InternetExplorerDriver();
+		} else if (browser.equalsIgnoreCase("safari")) {
+			WebDriverManager.getInstance(SafariDriver.class).setup();
+			driver = new SafariDriver();
 		}
 
 		eventFiringWebDriver = new EventFiringWebDriver(driver);
@@ -73,9 +84,10 @@ public class TestBase {
 
 		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-		String currentDir = "H:\\MyWorkspace\\CRMTest\\screenshots";
+		String currentDir = System.getProperty("user.dir") + File.separator + "screenshots";
 
-		FileUtils.copyDirectory(srcFile, new File(currentDir + "\\screenshots_\\" + System.currentTimeMillis() + ".png"));
+		FileUtils.copyDirectory(srcFile,
+				new File(currentDir + "\\screenshots_\\" + System.currentTimeMillis() + ".png"));
 
 	}
 
